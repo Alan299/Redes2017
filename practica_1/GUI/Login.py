@@ -20,16 +20,9 @@ class Login(QtGui.QDialog):
         self.textName = QtGui.QLineEdit(self)
         self.textPass = QtGui.QLineEdit(self)
         self.textPass.setEchoMode(QtGui.QLineEdit.Password)
-        #self.textNameT = QtGui.QTextEdit("usuario")
-        #self.textNameT.move(10,250)
-    
-       
-        #self.textPassT = QtGui.QTextEdit("contrasena")
-        #self.textPassT.move(10,300)
        
         
         self.buttonLogin = QtGui.QPushButton('Login', self)
-        #self.buttonLogin.clicked.connect(self.showDialog)
         self.buttonLogin.clicked.connect(self.ManejaLogin)
         
         self.showDialog
@@ -38,10 +31,10 @@ class Login(QtGui.QDialog):
        
         layout = QtGui.QVBoxLayout(self)
         layout.addWidget(self.textName)
-        #layout.addWidget(self.textNameT)
+       
         
         layout.addWidget(self.textPass)
-        #layout.addWidget(self.textPassT)
+    
         
         layout.addWidget(self.buttonLogin)
         
